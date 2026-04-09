@@ -1,0 +1,45 @@
+// CELPIP Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM017",
+  slug: "celpip",
+  name: "CELPIP",
+  fullName: "CELPIP",
+  alias: "CELPIP",
+  family: "CELPIP",
+  category: "Language proficiency",
+  subcategory: "Canada immigration",
+  country: "Canada",
+  region: "North America",
+  languages: ["English"],
+  estimatedAnnualTakers: "varies",
+  testingWindow: "Year-round",
+  schedulePattern: "Frequent",
+  ageGroup: "18-45",
+  targetUser: "Migration candidate",
+  delivery: "Computer-based",
+  questionTypes: ["Listening","reading","writing","speaking"],
+  adaptivity: "Linear",
+  sections: "4 skills",
+  scoringMode: "1-12 levels",
+  essayOrSpeaking: "Speaking + writing",
+  ipRisk: "High",
+  contentReuse: "language_4skills",
+  uiEngine: "computer_integrated_language",
+  monetizationPotential: "Medium",
+  tier: "Tier 3",
+  launchWave: "Wave 5",
+  themeColor: "#059669",
+  themeColorDark: "#047857",
+  localizationComplexity: "Low",
+  offlineNeeded: false,
+  mobileFirst: true,
+  locale: "en",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;

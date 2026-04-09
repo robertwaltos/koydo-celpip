@@ -1,0 +1,32 @@
+export const EXAM_CONFIG = {
+  examId: "EXAM017",
+  slug: "celpip",
+  name: "CELPIP",
+  fullName: "Canadian English Language Proficiency Index Program",
+  description: "Free CELPIP practice for Listening, Reading, Writing, and Speaking with AI analytics.",
+  url: "https://celpip.koydo.app",
+  category: "Language proficiency",
+  subcategory: "Canadian English",
+  country: "Canada",
+  region: "North America",
+  languages: ["English"] as const,
+  primaryLanguage: "en",
+  sections: [
+    "Listening",
+    "Reading",
+    "Writing",
+    "Speaking",
+  ] as const,
+  testFormat: "Computer-based" as const,
+  questionFormat: "MCQ, Written Response, Speaking" as const,
+  scoring: "1–12 per component" as const,
+  themeColor: "#DC2626",
+  themeColorDark: "#B91C1C",
+  ipRisk: "High" as const,
+  ipDisclaimer: "CELPIP® is a registered trademark of Paragon Testing Enterprises, which was not involved in the production of, and does not endorse, this product.",
+  freemiumGate: { dailyQuestions: 10 },
+  contentReuseCluster: "language_4skills",
+  uiEngineProfile: "computer_integrated_language",
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
